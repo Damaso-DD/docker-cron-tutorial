@@ -6,7 +6,7 @@ WORKDIR /cron
 
 # Updating the packages
 RUN apk update && \
-apk upgrade --available && sync && \
+apk upgrade --available && sync
 
 # Copy script file into container.
 COPY date-script.sh .
